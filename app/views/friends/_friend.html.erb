@@ -1,0 +1,24 @@
+<div id="<%= dom_id friend %>">
+
+  <tr> <th>
+    <%= link_to friend.first_name + ' ' + friend.last_name, friend %>
+ </th>
+  <th>
+
+    <%= friend.email %>
+</th>
+  <th>
+
+    <%= friend.phone %>
+</th>
+  <th>
+
+    <%= friend.twitter %>
+  </th>
+ 
+    <th>
+      <%= link_to "Delete", friend, method: :delete, data:{ confirm: 'Are toy sure?'}, class: 'btn btn-outline-danger btn-sm' %>
+    </th>
+</tr>
+
+</div>
